@@ -1,0 +1,119 @@
+baseURL: https://ofenbau-innung.info/
+locale: de-DE
+title: Innung des Kachelofen- und Kaminbauerhandwerks Land Brandenburg
+theme: ofenbau-innung-theme
+
+params:
+  logo: /images/logo.png
+
+menus:
+  main:
+    - identifier: start
+      name: Startseite
+      url: /
+      weight: 10
+    - identifier: betriebe
+      name: Innnungsfachbetriebe
+      url: /innnungsfachbetriebe/
+      weight: 20
+    - identifier: heizkamine
+      name: Heizkamine
+      url: /heizkamine/
+      weight: 30
+    - name: Stilkamine
+      url: /heizkamine/stilkamine/
+      parent: heizkamine
+      weight: 1
+    - name: Moderne Kamine
+      url: /heizkamine/moderne-kamine/
+      parent: heizkamine
+      weight: 2
+    - name: Rustikale Kamine
+      url: /heizkamine/rustikale-kamine/
+      parent: heizkamine
+      weight: 3
+    - name: Bauarten
+      url: /heizkamine/bauarten/
+      parent: heizkamine
+      weight: 4
+    - identifier: heizkamine-wassertechnik
+      name: Wassertechnik
+      url: /heizkamine/wassertechnik/
+      parent: heizkamine
+      weight: 5
+    - identifier: kacheloefen
+      name: Kachelöfen
+      url: /kacheloefen/
+      weight: 40
+    - name: Moderne Kachelöfen
+      url: /kacheloefen/moderne-kacheloefen/
+      parent: kacheloefen
+      weight: 1
+    - name: Zeitlose Kachelöfen
+      url: /kacheloefen/zeitlose-kacheloefen/
+      parent: kacheloefen
+      weight: 2
+    - name: Rustikale Kachelöfen
+      url: /kacheloefen/rustikale-kacheloefen/
+      parent: kacheloefen
+      weight: 3
+    - name: Kachelofenluftheizung
+      url: /kacheloefen/kachelofenluftheizung/
+      parent: kacheloefen
+      weight: 4
+    - identifier: kacheloefen-wassertechnik
+      name: Wassertechnik
+      url: /kacheloefen/wassertechnik/
+      parent: kacheloefen
+      weight: 5
+    - identifier: kaminoefen
+      name: Kaminöfen
+      url: /kaminoefen/
+      weight: 50
+    - identifier: herde
+      name: Herde
+      url: /herde/
+      weight: 60
+    - identifier: pelletoefen
+      name: Pelletöfen
+      url: /pelletoefen/
+      weight: 70
+    - identifier: informationen
+      name: Informationen
+      url: /informationen/
+      weight: 80
+    - name: Innungssiegel
+      url: /informationen/innungssiegel/
+      parent: informationen
+      weight: 1
+    - name: Kamin- und Ofencheck
+      url: /informationen/kamin-und-ofencheck/
+      parent: informationen
+      weight: 2
+    - name: Wartung & Pflege
+      url: /informationen/wartung/
+      parent: informationen
+      weight: 3
+    - name: Holzkunde
+      url: /informationen/holzkunde/
+      parent: informationen
+      weight: 4
+    - name: Lehrlingsausbildung
+      url: /informationen/lehrlingsausbildung/
+      parent: informationen
+      weight: 5
+    - name: Ansprechpartner
+      url: /informationen/ansprechpartner/
+      parent: informationen
+      weight: 6
+    - name: Weblinks
+      url: /informationen/weblinks/
+      parent: informationen
+      weight: 7
+  footer:
+    - name: Impressum
+      url: /informationen/impressum/
+      weight: 1
+    - name: Datenschutzerklärung
+      url: /informationen/datenschutzerklaerung/
+      weight: 2

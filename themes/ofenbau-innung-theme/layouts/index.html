@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+
+    <main>
+      <header class="page-header homepage-hero">
+        <h1>{{ .Site.Title }}</h1>
+      </header>
+
+      <section class="beliebte-seiten">
+        <h2>Beliebte Seiten</h2>
+        <nav class="teasers" aria-label="Beliebte Seiten">
+          <a class="teaser" href="/innnungsfachbetriebe/">
+            <h3>Innungsfachbetriebe</h3>
+            <p>Hier finden Sie den Innungsfachbetrieb in Ihrer Nähe.</p>
+          </a>
+          <a class="teaser" href="/informationen/wartung/">
+            <h3>Wartung und Pflege</h3>
+            <p>
+              Damit Ihr Kamin, Ofen oder Herd immer richtig Zug hat, sollten Sie
+              Folgendes beachten.
+            </p>
+          </a>
+          <a class="teaser" href="/informationen/kamin-und-ofencheck/">
+            <h3>Kamin und Ofencheck</h3>
+            <p>Lassen Sie Ihren Kamin oder Ofen professionell prüfen.</p>
+          </a>
+          <a class="teaser" href="/informationen/holzkunde/">
+            <h3>Holzkunde</h3>
+            <p>Das sollten Sie wissen, wenn Sie mit Holz heizen.</p>
+          </a>
+          <a class="teaser" href="/informationen/innungssiegel/">
+            <h3>Das Innungssiegel</h3>
+            <p>
+              Seit Jahren stehen wir für Qualität. Das Innungssiegel ist Ihr
+              Zeichen für geprüfte Handwerkskunst.
+            </p>
+          </a>
+          <a class="teaser" href="/informationen/lehrlingsausbildung/">
+            <h3>Lehrlingsausbildung</h3>
+            <p>Kachelofen- und Luftheizungsbauer – ein Handwerk mit Zukunft. Alles zur dreijährigen Ausbildung.</p>
+          </a>
+        </nav>
+      </section>
+
+      <div class="homepage-intro">
+        <section class="innungsaufgaben">
+          <h2>Unsere Aufgaben</h2>
+          <ul>
+            <li>
+              Technische, betriebswirtschaftliche, tarif- und arbeitsrechtliche
+              Informationen
+            </li>
+            <li>Organisation von Fort- und Weiterbildungen</li>
+            <li>Öffentlichkeitsarbeit und Pressearbeit</li>
+            <li>Lohnverhandlungen</li>
+            <li>Kontakte zu Behörden und öffentlichen Einrichtungen</li>
+            <li>Informationen zur Lehrlingsausbildung</li>
+          </ul>
+        </section>
+
+        <section class="leadership">
+          <h2>Vorstand</h2>
+          <dl>
+            <dt>Landesinnungsobermeister</dt>
+            <dd>Jörg Friedow</dd>
+            <dt>Stellvertreter</dt>
+            <dd>Torsten Schulz</dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>

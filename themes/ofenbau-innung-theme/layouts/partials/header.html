@@ -1,0 +1,32 @@
+<header class="site-header">
+  {{ if .Site.Params.logo }}
+  <a href="/" class="site-logo">
+    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+  </a>
+  {{ else }}
+  <a href="/" class="site-logo site-logo--text">Ofenbau Innung Brandenburg</a>
+  {{ end }}
+
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen">
+    <span></span><span></span><span></span>
+  </button>
+
+  {{ with .Site.Menus.main }}
+  <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+    <ul>
+      {{ range sort . }}
+      <li{{ if .HasChildren }} class="has-dropdown"{{ end }}>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        <ul class="dropdown">
+          {{ range .Children }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+  {{ end }}
+</header>

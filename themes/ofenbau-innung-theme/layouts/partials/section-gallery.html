@@ -1,0 +1,40 @@
+{{/*
+  Renders a preview gallery of 24 randomly chosen images pooled from all
+  subpages that carry imageCount + imageDir frontmatter.
+  Used on section index pages (heizkamine, kacheloefen) where the page
+  itself has no imageCount but its children do.
+*/}}
+{{ $images := slice }}
+{{ range .Pages }}
+  {{ $p := . }}
+  {{ if and $p.Params.imageCount $p.Params.imageDir }}
+    {{ range seq 1 $p.Params.imageCount }}
+      {{ $images = $images | append (dict
+          "src" (printf "/images/%s/%d.jpg" $p.Params.imageDir .)
+          "alt" (printf "%s – Bild %d" $p.Title .)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $preview := first 24 (shuffle $images) }}
+
+{{ with $preview }}
+<div class="gallery" data-gallery>
+  {{ range $i, $img := . }}
+  <img
+    src="{{ $img.src }}"
+    alt="{{ $img.alt }}"
+    loading="lazy"
+    data-gallery-index="{{ add $i 1 }}"
+  >
+  {{ end }}
+</div>
+
+<div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Bildansicht" hidden>
+  <div class="gallery-modal-backdrop"></div>
+  <img class="gallery-modal-img" src="" alt="">
+  <button class="gallery-modal-prev" aria-label="Vorheriges Bild">&#8249;</button>
+  <button class="gallery-modal-next" aria-label="Nächstes Bild">&#8250;</button>
+  <button class="gallery-modal-close" aria-label="Schließen">&times;</button>
+</div>
+{{ end }}

@@ -6,14 +6,23 @@
     alt="{{ $.Title }} – Bild {{ . }}"
     loading="lazy"
     data-gallery-index="{{ . }}"
-  >
+  />
   {{ end }}
 </div>
 
-<div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-label="Bildansicht" hidden>
+<div
+  class="gallery-modal"
+  id="gallery-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Bildansicht"
+  hidden
+>
   <div class="gallery-modal-backdrop"></div>
-  <img class="gallery-modal-img" src="" alt="">
-  <button class="gallery-modal-prev" aria-label="Vorheriges Bild">&#8249;</button>
+  <img class="gallery-modal-img" src="" alt="" />
+  <button class="gallery-modal-prev" aria-label="Vorheriges Bild">
+    &#8249;
+  </button>
   <button class="gallery-modal-next" aria-label="Nächstes Bild">&#8250;</button>
   <button class="gallery-modal-close" aria-label="Schließen">&times;</button>
 </div>

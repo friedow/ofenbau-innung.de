@@ -39,6 +39,30 @@
               projectRootFile = "flake.nix";
               programs = {
                 nixfmt.enable = true;
+                prettier = {
+                  enable = true;
+                  includes = [
+                    "*.html"
+                    "*.css"
+                    "*.js"
+                    "*.yaml"
+                    "*.yml"
+                    "*.md"
+                    "*.json"
+                    "*.webmanifest"
+                  ];
+                  excludes = [
+                    "themes/*/layouts/**/*.html"
+                  ];
+                };
+                shfmt = {
+                  enable = true;
+                  includes = [
+                    "*.sh"
+                    ".envrc"
+                  ];
+                };
+                taplo.enable = true;
               };
             };
 

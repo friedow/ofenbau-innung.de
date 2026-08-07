@@ -21,11 +21,11 @@ mapfile -t addresses < <(
 
 total=${#addresses[@]}
 echo "Geocoding $total addresses → $OUT"
-echo "["  > "$OUT"
+echo "[" >"$OUT"
 
 for i in "${!addresses[@]}"; do
   addr="${addresses[$i]}"
-  printf "  (%d/%d) %s\n" "$((i+1))" "$total" "$addr"
+  printf "  (%d/%d) %s\n" "$((i + 1))" "$total" "$addr"
 
   nominatim_query() {
     local q="$1"
@@ -41,7 +41,7 @@ for i in "${!addresses[@]}"; do
   lon=$(printf '%s' "$result" | jq -r '.[0].lon // empty')
 
   # Retry without "OT" (Ortsteil) qualifiers that confuse Nominatim
-  if [[ -z "$lat" && "$addr" == *" OT "* ]]; then
+  if [[ -z $lat && $addr == *" OT "* ]]; then
     simplified=$(printf '%s' "$addr" | awk '{gsub(/ OT [^ ,]+/, ""); print}')
     sleep 1.2
     result=$(nominatim_query "$simplified, Deutschland")
@@ -49,7 +49,7 @@ for i in "${!addresses[@]}"; do
     lon=$(printf '%s' "$result" | jq -r '.[0].lon // empty')
   fi
 
-  if [[ -n "$lat" && -n "$lon" ]]; then
+  if [[ -n $lat && -n $lon ]]; then
     printf "         → %s, %s\n" "$lat" "$lon"
     entry="{\"lat\": $lat, \"lon\": $lon}"
   else
@@ -58,13 +58,13 @@ for i in "${!addresses[@]}"; do
   fi
 
   if [[ $i -lt $((total - 1)) ]]; then
-    printf '  %s,\n' "$entry" >> "$OUT"
+    printf '  %s,\n' "$entry" >>"$OUT"
   else
-    printf '  %s\n'  "$entry" >> "$OUT"
+    printf '  %s\n' "$entry" >>"$OUT"
   fi
 
   sleep 1.2
 done
 
-echo "]" >> "$OUT"
+echo "]" >>"$OUT"
 echo "Done. Written to $OUT"

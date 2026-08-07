@@ -7,6 +7,4 @@ demosite = "ofenbau-innung.info"
 tags = []
 features = []
 min_version = "v0.1.0"
-authors = [
-  {name = "Christian Friedow", homepage = "https://friedow.com"}
-]
+authors = [{ name = "Christian Friedow", homepage = "https://friedow.com" }]

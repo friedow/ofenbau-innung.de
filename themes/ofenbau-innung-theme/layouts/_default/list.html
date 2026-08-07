@@ -10,21 +10,15 @@
       </header>
 
       {{ if .Content }}
-      <div class="section-intro article-body">
-        {{ .Content }}
-      </div>
-      {{ end }}
-
-      {{ with .Pages }}
+      <div class="section-intro article-body">{{ .Content }}</div>
+      {{ end }} {{ with .Pages }}
       <nav class="section-children" aria-label="Unterbereiche">
         {{ range . }}
         <a class="section-child-link" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ end }}
       </nav>
-      {{ end }}
-
-      {{ partial "gallery.html" . }}
-      {{ partial "section-gallery.html" . }}
+      {{ end }} {{ partial "gallery.html" . }} {{ partial "section-gallery.html"
+      . }}
     </main>
 
     {{ partial "footer.html" . }}

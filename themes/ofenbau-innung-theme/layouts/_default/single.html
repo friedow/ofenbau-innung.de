@@ -10,12 +10,8 @@
       </header>
 
       {{ if .Content }}
-      <div class="article-body">
-        {{ .Content }}
-      </div>
-      {{ end }}
-
-      {{ partial "gallery.html" . }}
+      <div class="article-body">{{ .Content }}</div>
+      {{ end }} {{ partial "gallery.html" . }}
     </main>
 
     {{ partial "footer.html" . }}

@@ -2,10 +2,10 @@
 title: Impressum
 ---
 
-## Innung des Kachelofen-, Kaminbauerhandwerks  Land Brandenburg
+## Innung des Kachelofen-, Kaminbauerhandwerks Land Brandenburg
 
 Geschäftsstelle:  
-+49 170 5391235  Gubener Straße 4b  03185 Peitz  
++49 170 5391235 Gubener Straße 4b 03185 Peitz  
 Gemeldet / registriert bei der HWK Cottbus  
 Geführt bei der Kreishandwerkerschaft Cottbus
 

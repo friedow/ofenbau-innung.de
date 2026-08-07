@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   {{ partial "head.html" . }}
   <link rel="stylesheet" href="/css/leaflet.css" />
@@ -10,11 +10,9 @@
         <h1>{{ .Title }}</h1>
       </header>
 
-      <div
-        id="members-map"
-        class="members-map"
-        aria-label="Karte der Innungsfachbetriebe"
-      ></div>
+      <div id="members-map"
+           class="members-map"
+           aria-label="Karte der Innungsfachbetriebe"></div>
 
       <div class="members-table-wrap">
         <table class="members-table">
@@ -35,9 +33,7 @@
                 {{ .address | replaceRE `^([^,]+), ` `$1<br />` | safeHTML }}
               </td>
               <td>
-                <a href="tel:{{ .phone | replaceRE `[^0-9+]` `` }}"
-                  >{{ .phone }}</a
-                >
+                <a href="tel:{{ .phone | replaceRE `[^0-9+]` `` }}">{{ .phone }}</a>
               </td>
               <td>
                 {{ if .email }}
@@ -46,9 +42,7 @@
               </td>
               <td>
                 {{ if .website }}
-                <a href="https://{{ .website }}" rel="noopener"
-                  >{{ .website }}</a
-                >
+                <a href="https://{{ .website }}" rel="noopener">{{ .website }}</a>
                 {{ end }}
               </td>
             </tr>
@@ -59,7 +53,6 @@
     </main>
 
     {{ partial "footer.html" . }}
-
     <script src="/js/leaflet.js"></script>
     <script>
       {{- $coordsList := hugo.Data.member_coords -}}

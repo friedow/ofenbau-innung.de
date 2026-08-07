@@ -3,12 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     {{- if .IsHome -}}
-      {{ .Site.Title }}
+    {{ .Site.Title }}
     {{- else -}}
-      {{ .Title }} | Ofenbau Innung Brandenburg
+    {{ .Title }} | {{ .Site.Title }}
     {{- end -}}
   </title>
-  <meta name="description" content="{{ if .IsHome }}Innung des Kachelofen- und Kaminbauerhandwerks Land Brandenburg – Ihr Fachverband für Kaminbau, Kachelöfen und Heizkamine.{{ else }}{{ .Summary | plainify }}{{ end }}">
+  <meta name="description"
+        content="{{ if .IsHome }}Innung des Kachelofen- und Kaminbauerhandwerks Land Brandenburg – Ihr Fachverband für Kaminbau, Kachelöfen und Heizkamine.{{ else }}{{ .Summary | plainify }}{{ end }}">
   <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
   <script src="{{ "js/custom.js" | absURL }}" defer></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

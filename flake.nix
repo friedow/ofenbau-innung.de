@@ -64,6 +64,20 @@
                 };
                 taplo.enable = true;
               };
+              settings.formatter.djlint = {
+                command = pkgs.lib.getExe (
+                  pkgs.writeShellApplication {
+                    name = "djlint-fmt";
+                    runtimeInputs = [ pkgs.djlint ];
+                    text = ''
+                      djlint --profile gohtml --reformat --indent 2 --preserve-blank-lines "$@"
+                      exit 0
+                    '';
+                  }
+                );
+                options = [ ];
+                includes = [ "themes/*/layouts/**/*.html" ];
+              };
             };
 
             packages.geocode-members = pkgs.writeShellApplication {

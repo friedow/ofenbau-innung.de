@@ -1,5 +1,6 @@
 <footer class="site-footer">
-  <span>© Innung des Kachelofen- und Kaminbauerhandwerks Land Brandenburg</span>
+  <span>© {{ .Site.Title }}</span>
+
   {{ with .Site.Menus.footer }}
   <nav aria-label="Rechtliches">
     {{ range sort . }}

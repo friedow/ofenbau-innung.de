@@ -9,6 +9,14 @@ nix develop
 hugo server
 ```
 
+## Test production build
+
+To test the site with production settings locally:
+
+```sh
+hugo server --environment production
+```
+
 ## Format
 
 Format all source files (Nix, HTML templates, CSS, JS, YAML, JSON, TOML, shell):

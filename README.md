@@ -9,6 +9,14 @@ nix develop
 hugo server
 ```
 
+## Format
+
+Format all source files (Nix, HTML templates, CSS, JS, YAML, JSON, TOML, shell):
+
+```sh
+nix fmt
+```
+
 ## Build
 
 Build the static site using nix:

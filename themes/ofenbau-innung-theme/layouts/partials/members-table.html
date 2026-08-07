@@ -1,0 +1,36 @@
+<div class="members-table-wrap">
+  <table class="members-table">
+    <thead>
+      <tr>
+        <th>Betrieb</th>
+        <th>Adresse</th>
+        <th>Telefon</th>
+        <th>E-Mail</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range hugo.Data.members }}
+      <tr>
+        <td>{{ .name }}</td>
+        <td>
+          {{ .address | replaceRE `^([^,]+), ` `$1<br />` | safeHTML }}
+        </td>
+        <td>
+          <a href="tel:{{ .phone | replaceRE `[^0-9+]` `` }}">{{ .phone }}</a>
+        </td>
+        <td>
+          {{ if .email }}
+          <a href="mailto:{{ .email }}">{{ .email }}</a>
+          {{ end }}
+        </td>
+        <td>
+          {{ if .website }}
+          <a href="https://{{ .website }}" rel="noopener">{{ .website }}</a>
+          {{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>

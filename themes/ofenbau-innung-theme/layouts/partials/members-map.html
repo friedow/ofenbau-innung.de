@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/leaflet.css" />
+
+<div id="members-map"
+     class="members-map"
+     aria-label="Karte der Innungsfachbetriebe"></div>
+
+<script src="/js/leaflet.js"></script>
+<script>
+  {{- $coordsList := hugo.Data.member_coords -}}
+  {{- $allMembers := slice -}}
+  {{- range $i, $m := hugo.Data.members -}}
+    {{- $c := index $coordsList $i -}}
+    {{- $entry := dict "name" $m.name "address" $m.address "phone" $m.phone "email" $m.email "website" $m.website -}}
+    {{- if $c -}}
+      {{- $entry = merge $entry (dict "lat" $c.lat "lon" $c.lon) -}}
+    {{- end -}}
+    {{- $allMembers = $allMembers | append $entry -}}
+  {{- end -}}
+  const members = {{ $allMembers | jsonify | safeJS }};
+
+  const map = L.map('members-map').setView([52.1, 13.8], 8);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/attributions">CARTO</a>'
+  }).addTo(map);
+
+  const pinIcon = L.divIcon({
+    html: '<img src="{{ .Site.Params.logo }}" alt="">',
+    className: 'map-pin',
+    iconSize: [36, 36],
+    iconAnchor: [18, 18],
+    popupAnchor: [0, -22],
+  });
+
+  for (const m of members) {
+    if (m.lat == null || m.lon == null) continue;
+    const parts = [
+      '<strong>' + m.name + '</strong>',
+      m.address,
+      m.phone ? '<a href="tel:' + m.phone.replace(/[^0-9+]/g, '') + '">' + m.phone + '</a>' : '',
+      m.email ? '<a href="mailto:' + m.email + '">' + m.email + '</a>' : '',
+      m.website ? '<a href="https://' + m.website + '" rel="noopener">' + m.website + '</a>' : '',
+    ].filter(Boolean).join('<br>');
+    L.marker([m.lat, m.lon], { icon: pinIcon }).addTo(map).bindPopup(parts);
+  }
+</script>

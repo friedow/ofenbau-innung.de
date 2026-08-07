@@ -2,16 +2,8 @@
 title: Lehrlingsausbildung
 ---
 
-Der Kachelofen- und Luftheizungsbauer ist ein Handwerk mit Zukunft. Die dreijährige Ausbildung verbindet Praxis und Theorie:
+Eine wichtige Aufgabe der Innungsarbeit ist die Lehrlingsausbildung. Der Beruf des Ofen- und Luftheizungsbauer/-in ist ein Beruf mit Zukunft, denn nie waren individuell Kachelöfen, Küchenherde und Kamin so beliebt wie heute. Moderne energiesparende Heizsysteme mit Elektronischer Abbrand Reglung setzen technisches Grundlagenwissen voraus. So arbeiten Innungsmitglieder ständig in Ausschüssen mit, um die fachlichen Lehrinhalte der Ausbildung dem Stand der Technik anzupassen. Drei Jahren der Ausbildung zum Ofen- und Luftheizungsbauer erfolgen im Lehrbetrieb, der Berufsschule und der überbetrieblichen Ausbildungsstätte. Jeder Lehrling schließt seine Ausbildung mit einer schriftlichen und praktischen Prüfung ab. In der Gesellenprüfungskommission arbeiten viele Innungsmitglieder mit.
 
-- **Betriebliche Ausbildung** im Innungsfachbetrieb
-- **Berufsschule** für theoretisches Fachwissen
-- **Fachausbildungsstätte** für spezielle handwerkliche Fertigkeiten
+Jeder neue Kundenauftrag erfordert gestalterisches Feingefühl und Geschick im Umgang mit keramischen und metallischen Werkstoffen. Die Auswahl des optimalen Heizsystems, die Beratung und der Umgang mit dem Kunden, stellen an jeden Gesellen hohe Anforderungen an das technische Know-how und handwerkliche Können.
 
-Am Ende der Ausbildung stehen eine schriftliche und eine praktische Abschlussprüfung vor der Handwerkskammer.
-
-## Was der Beruf verlangt
-
-Der Kachelofen- und Luftheizungsbauer braucht künstlerisches Gespür ebenso wie handwerkliches Geschick. Die Arbeit mit Keramik, Metall und verschiedenen Steinen erfordert Sorgfalt und ein gutes Auge für Proportionen und Gestaltung.
-
-Interessierte wenden sich direkt an einen Innungsfachbetrieb oder an die Innung.
+[Bundesagentur Für Arbeit](http://berufenet.arbeitsagentur.de/berufe/)

@@ -4,4 +4,4 @@ imageCount: 114
 imageDir: heizkamine/moderne-kamine
 ---
 
-Moderne Heizkamine verbinden zeitgemäßes Design mit hoher Heizleistung. Große Sichtscheiben und klare Linien schaffen ein eindrucksvolles Flammenbild, das Wärme und Atmosphäre zugleich bietet. Ihren Heizkamin fertigt exklusiv der Ofen- und Luftheizungsbauer an.
+Ein Kaminfeuer bietet Romantik, gemütliche Stimmung und unvergesslich harmonische Momente. Im Unterschied zum Kachelofen hat der Kamin eine sehr große Sichtscheibe. Durch diese können Sie ein stimmungsvolles, wohliges Flammenbild und schnelle Wärme genießen. Einen Ausblick auf die vielfältigen Gestaltungsmöglichkeiten des Heizkamins sehen Sie in der Bildergalerie. Ihren Heizkamin fertigt exklusiv der Ofen- und Luftheizungsbauer an.

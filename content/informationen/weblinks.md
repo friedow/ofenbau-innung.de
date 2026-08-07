@@ -2,10 +2,6 @@
 title: Weblinks
 ---
 
-### **Wichtiger Hinweis zu allen Links auf dieser Homepage:**
-
-Mit Urteil vom 12. Mai 1998 (312 O 85/98) hat das Landgericht Hamburg entschieden, dass man durch das Setzen eines Links die Inhalte der gelinkten Seite mit zu verantworten hat. Dies kann nur dadurch verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Wir haben auf unseren Seiten Links zu anderen Seiten im Internet gelegt. Für alle diese Links gilt: Die Innung erklärt ausdrücklich, dass sie keinerlei Einfluss auf die Gestaltung und die Inhalte der gelinkten Seiten hat. Deshalb distanziert sie sich hiermit ausdrücklich von allen Inhalten aller gelinkten Seiten auf der Homepage der Innung und macht sich diese Inhalte nicht zu Eigen. Wir behalten uns Änderungen der Informationen auf diesem Server, die wir unverbindlich zur Verfügung stellen, ohne vorherige Ankündigung vor.
-
 ### Großhändler
 
 [HAGOS Fachgrosshandel](http://www.hagos.de)
@@ -81,3 +77,7 @@ Mit Urteil vom 12. Mai 1998 (312 O 85/98) hat das Landgericht Hamburg entschiede
 [Schako](http://www.schako.de/)
 
 [Schrag](http://www.schrag.de/)
+
+### **Wichtiger Hinweis zu allen Links auf dieser Homepage:**
+
+Mit Urteil vom 12. Mai 1998 (312 O 85/98) hat das Landgericht Hamburg entschieden, dass man durch das Setzen eines Links die Inhalte der gelinkten Seite mit zu verantworten hat. Dies kann nur dadurch verhindert werden, dass man sich ausdrücklich von diesen Inhalten distanziert. Wir haben auf unseren Seiten Links zu anderen Seiten im Internet gelegt. Für alle diese Links gilt: Die Innung erklärt ausdrücklich, dass sie keinerlei Einfluss auf die Gestaltung und die Inhalte der gelinkten Seiten hat. Deshalb distanziert sie sich hiermit ausdrücklich von allen Inhalten aller gelinkten Seiten auf der Homepage der Innung und macht sich diese Inhalte nicht zu Eigen. Wir behalten uns Änderungen der Informationen auf diesem Server, die wir unverbindlich zur Verfügung stellen, ohne vorherige Ankündigung vor.

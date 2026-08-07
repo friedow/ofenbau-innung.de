@@ -2,32 +2,38 @@
 title: Holzkunde
 ---
 
-Das sollten Sie wissen, wenn Sie mit Holz heizen.
+Ein Ofen spendet Wärme und Wohlbehagen, doch dieses Wohlbehagen kann schnell zum Unbehagen werden, wenn schadstoffbelastete Rauchgase durch den Kamin entlassen werden. Ob eine Feuerstätte umweltfreundlich oder umweltbelastend wirkt, hängt im wesentlichen von ihrer Bedienung und der Art des Brennstoffes ab.
 
-## Zugelassene Brennstoffe (1. BImSchV)
+### Welche Brennstoffe sind erlaubt?
 
-Folgende Brennstoffe sind für Kamine, Kachelöfen und Herde zugelassen:
+Es dürfen nur raucharme Brennstoffe verheizt werden.  
+Als raucharm sind in der 1. Verordnung zur Durchführung des Bundesimmissionsschutzgesetzes folgende Brennstoffe genannt:
 
-- Steinkohle und Steinkohlenbriketts
-- Braunkohlebriketts
-- Koks
-- Trockenes, unbehandeltes Holz
+- Steinkohlen und Steinkohlenbriketts,
+- Braunkohlenbriketts,
+- Koks,
+- trockenes, naturbelassenes Holz.
 
-## Was verboten ist
+### Welche Brennstoffe sind nicht erlaubt?
 
-Nicht verbrannt werden darf: imprägniertes, beschichtetes oder lackiertes Holz, Papier, Verpackungsmaterialien und Abfälle jeder Art. Die Verbrennung dieser Materialien ist schädlich für Mensch, Umwelt und die Feuerstätte selbst.
+Nicht zulässig ist das Verheizen von Holz, das mit Imprägnierungsmitteln behandelt ist. Auch Papier, Verpackungsmaterial und Abfälle dürfen nicht verheizt werden. Da in kleinen Feuerstätten heute überwiegend Holz zum Einsatz kommt, soll in dieser Seite das Heizen mit Holz behandelt werden.
 
-## Holzfeuchtigkeit
+### Holztrocknung
 
-Holz muss einen maximalen Feuchtegehalt von **20 %** haben. Frisch geschlagenes Holz (Grünholz) hat einen Feuchtegehalt von über 50 % und ist zum Heizen ungeeignet.
+Es darf nur trockenes Holz mit einem Feuchtigkeitsgehalt von höchstens 20% geheizt werden.  
+Deshalb zunächst einige Hinweise zur Holztrocknung und -lagerung:
 
-Richtwerte für den Feuchtegehalt:
+- Holz braucht mindestens zwei Jahre Zeit zum Austrocknen.
+- Das Scheitholz muss an einer belüfteten, möglichst sonnigen Stelle regengeschützt aufgeschichtet werden (ideal Südseite). Zwischen den einzelnen Holzstößen sollte eine Handbreit Abstand sein, damit durchströmende Luft die entweichende Feuchtigkeit mitnehmen kann.
+- Es ist nicht sinnvoll frisches Holz im Keller zu stapeln. Hier wird es nicht austrocknen, sondern stocken. Nur trockenes Holz kann in einem belüfteten Keller aufbewahrt werden.
 
-- Sehr trocken (ofengetrocknet): ~10 %
-- Luftgetrocknet: ~15 %
-- Freiland, regengeschützt gelagert: ~20 %
-- Grünholz: über 50 %
+Wieviel Feuchtigkeit Holz enthält, hängt von der Trocknungsdauer und -art ab. Folgende Anhaltswerte seien genannt:
 
-## Richtig lagern
+- sehr trockenes Holz um 10% Feuchtigkeit,
+- gut luftgetrocknetes Holz um 15% Feuchtigkeit,
+- getrocknetes Holz im Freien regengeschützt aufbewahrt (Herbst und Winter) um 20% Feuchtigkeit,
+- grünes Holz mehr als 50% Feuchtigkeit.
 
-Holz muss mindestens zwei Jahre trocknen. Lagern Sie es belüftet, sonnig und regengeschützt. Ein Holzfeuchtemessgerät hilft, die Trocknheit vor dem Befeuern zu prüfen.
+### Holzfeuchtigkeit und Heizwert
+
+Der Heizwert des Holzes hängt sehr stark von der Holzfeuchtigkeit ab. Je feuchter das Holz ist, umso niedriger ist sein Heizwert. Das im Holz enthaltene Wasser muss bei der Verbrennung verdampft werden. Und da zum Wasser verdampfen bekanntlich viel Energie notwendig ist, geht mit steigendem Wassergehalt des Holzes immer mehr der enthaltenen Energie dafür verloren. Feuchtes Holz zu verbrennen ist aber nicht nur unwirtschaftlich, sondern auch schädlich. Durch den hohen Wassergehalt ist die Verbrennungstemperatur niedriger – verstärkte Ruß- und Teerbildung, Gefahr der Kaminversottung und starke Zunahme schädlicher Emissionen sind die Folgen.

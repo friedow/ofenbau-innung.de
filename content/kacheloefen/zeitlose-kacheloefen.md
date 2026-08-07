@@ -4,4 +4,6 @@ imageCount: 24
 imageDir: kacheloefen/zeitlose-kacheloefen
 ---
 
-Seit Jahrhunderten beliebt, vermitteln zeitlose Kachelöfen Lebensqualität, Gemütlichkeit und schöne Erinnerungen. Klassische Formen und bewährte Materialien machen sie zu einem dauerhaften Mittelpunkt im Wohnraum – eine Investition, die Generationen überdauert.
+Ein Kachelofen ist ein Kulturgut – eine Wärmequelle der besonderen Art:
+
+Einen Ausblick auf die vielfältigen Gestaltungsmöglichkeiten des zeitlosen Kachelofen sehen Sie in der Bildergalerie. Ihren zeitlosen Kachelofen fertigt exklusiv ihr Innungsfachberieb in Ihrer Nähe an.

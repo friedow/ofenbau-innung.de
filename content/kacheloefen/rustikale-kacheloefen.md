@@ -4,4 +4,4 @@ imageCount: 27
 imageDir: kacheloefen/rustikale-kacheloefen
 ---
 
-Rustikale Kachelöfen überzeugen durch große Wärmespeicherkapazität und naturnahe Materialien. Naturstein, handgefertigte Kacheln und robuste Konstruktionen machen sie zu einer generationenübergreifenden Investition, die Jahr für Jahr zuverlässig Wärme spendet.
+Ein Kachelofen ist ein Kulturgut – eine Wärmequelle der besonderen Art: Einen Ausblick auf die vielfältigen Gestaltungsmöglichkeiten des rustikalen Kachelofen sehen Sie in der Bildergalerie. Ihren rustikalen Kachelofen fertigt exklusiv ihr Innungsfachberieb in Ihrer Nähe an.

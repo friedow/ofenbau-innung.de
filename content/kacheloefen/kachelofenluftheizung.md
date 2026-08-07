@@ -2,6 +2,8 @@
 title: Kachelofenluftheizung
 ---
 
-Holz ist ein klimaneutraler Energieträger, der in Brandenburg regional verfügbar ist. Die Kachelofenluftheizung nutzt diese Energie besonders effizient: Warme Luft wird über ein Kanalsystem in verschiedene Räume verteilt und sorgt so für eine gleichmäßige Wärmeversorgung im ganzen Haus.
+Über eine Kachelofenheizung freut sich die ganze Familie. Eine schönere und sinnvollere Möglichkeit, Wärme für sein Zuhause zu sichern und gleichzeitig Warmwasser zu gewinnen, gibt es wohl nicht.
 
-Das System lässt sich in bestehende Heizungsanlagen integrieren und kann als Ergänzung zu konventionellen Heizungen betrieben werden. Die individuelle Installation übernehmen die lokalen Innungsbetriebe – von der Planung bis zur Inbetriebnahme.
+Sie können eine Kachelofenheizung als Unterstützung zur Warmwassererzeugung für Ihr Haus einsetzen und diese in Ihr bestehendes Heizsystem einbetten. Es macht Freude den heimischen und klimaneutralen Energieträger Holz für sein eigenes Heizsystem zu verwenden.
+
+Einen Ausblick auf die vielfältigen Gestaltungsmöglichkeiten des Kaminofen sehen Sie in der Bildergalerie. Ihre Kachelhofenluftheizung fertigt exklusiv Ihr Innungsfachbetrieb in Ihrer Nähe an.

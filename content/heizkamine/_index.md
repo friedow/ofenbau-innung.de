@@ -2,4 +2,6 @@
 title: Heizkamine
 ---
 
-Ein Kaminfeuer bietet Romantik, gemütliche Stimmung und unvergesslich harmonische Momente. Heizkamine haben eine sehr große Sichtscheibe, mit der man ein stimmungsvolles, wohliges Flammenbild und schnelle Wärme genießen kann. Moderne Kamineinsätze erreichen Wirkungsgrade bis zu 85% und können mit Gasbrenner für automatischen Betrieb ausgestattet werden. Ihren Heizkamin fertigt exklusiv der Ofen- und Luftheizungsbauer an.
+Ein Kaminfeuer bietet Romantik, gemütliche Stimmung und unvergesslich harmonische Momente. Im Unterschied zum Kachelofen hat der Kamin eine sehr große Sichtscheibe. Durch diese können Sie ein stimmungsvolles, wohliges Flammenbild und schnelle Wärme genießen. Heizkamine können auch mit einem Erdgas Einsatz befeuert werden, vollautomatisch versteht sich.
+
+Übrigens: Moderne Kamineinsätze erreichen heute einen Wirkungsgrad von bis zu 85%. In diesen Kategorien finden Sie den Kamin ganz nach Ihrem Geschmack:

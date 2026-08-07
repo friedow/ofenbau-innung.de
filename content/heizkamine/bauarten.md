@@ -2,14 +2,12 @@
 title: Bauarten
 ---
 
-Nach DIN 18891 gibt es zwei Zulassungsarten für Heizkamine:
+In der DIN 18891 werden zwei verschiedene Abnahmemöglichkeiten der Kamin/Öfen durch den Schornsteinfegermeister dargestellt:
 
-## Bauart 1
+**Heizkamine der Bauart 1:**
 
-Als „Ofen" zugelassen. Der Betrieb ist nur geschlossen möglich. Ein gemeinsamer Schornstein mit anderen Feuerstätten ist zulässig.
+Kamine/Öfen der Bauart 1 werden als „Öfen" abgenommen und dürfen nur geschlossen betrieben werden. Sie können zusammen mit anderen Öfen an einem Schornstein angeschlossen werden.
 
-## Bauart 2
+**Heizkamine der Bauart 2:**
 
-Kann offen oder geschlossen betrieben werden. Für Bauart 2 ist ein eigener, dedizierter Schornstein erforderlich.
-
-Die richtige Bauart hängt von den örtlichen Gegebenheiten und den Anforderungen des Schornsteinfegers ab. Ein Innungsfachbetrieb berät Sie bei der Wahl der passenden Lösung.
+Kamine/Öfen der Bauart 2 können alternativ mit geschlossenen oder offener Feuerraumtür betrieben werden. Sie benötigen durch ihre Feuerungseigenschaft als „offener Kamin" auf jeden Fall einen eigenen Schornstein

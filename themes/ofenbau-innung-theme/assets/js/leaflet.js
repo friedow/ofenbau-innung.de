@@ -3772,9 +3772,9 @@
     });
   var _i = di.extend({
       options: {
-        iconUrl: "marker-icon.png",
-        iconRetinaUrl: "marker-icon-2x.png",
-        shadowUrl: "marker-shadow.png",
+        iconUrl: "marker-icon.webp",
+        iconRetinaUrl: "marker-icon-2x.webp",
+        shadowUrl: "marker-shadow.webp",
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
@@ -3795,7 +3795,7 @@
         }
         return (
           (t = e(t, /^url\((['"])?(.+)\1\)$/, 2)) &&
-          e(t, /^(.*)marker-icon\.png$/, 1)
+          e(t, /^(.*)marker-icon\.webp$/, 1)
         );
       },
       _detectIconPath: function () {

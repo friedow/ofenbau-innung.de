@@ -10,8 +10,13 @@
   </title>
   <meta name="description"
         content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify }}{{ end }}">
-  <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
-  <script src="{{ "js/custom.js" | absURL }}" defer></script>
+  <link rel="preload" href="{{ "fonts/Archivo.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/SourceSans3.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/SourceSerif4.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ $js := resources.Get "js/custom.js" | minify | fingerprint }}
+  <script src="{{ $js.Permalink }}" defer></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">

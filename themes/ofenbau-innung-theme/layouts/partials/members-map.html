@@ -1,10 +1,12 @@
-<link rel="stylesheet" href="/css/leaflet.css" />
+{{ $leafletCss := resources.Get "css/leaflet.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $leafletCss.Permalink }}" integrity="{{ $leafletCss.Data.Integrity }}">
 
 <div id="members-map"
      class="members-map"
      aria-label="Karte der Innungsfachbetriebe"></div>
 
-<script src="/js/leaflet.js"></script>
+{{ $leafletJs := resources.Get "js/leaflet.js" | minify | fingerprint }}
+<script src="{{ $leafletJs.Permalink }}" integrity="{{ $leafletJs.Data.Integrity }}"></script>
 <script>
   {{- $coordsList := hugo.Data.member_coords -}}
   {{- $allMembers := slice -}}
@@ -24,8 +26,10 @@
     attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, © <a href="https://carto.com/attributions">CARTO</a>'
   }).addTo(map);
 
+  {{- $logoSrc := .Site.Params.logo -}}
+  {{- with resources.Get .Site.Params.logo -}}{{- $logoSrc = .RelPermalink -}}{{- end -}}
   const pinIcon = L.divIcon({
-    html: '<img src="{{ .Site.Params.logo }}" alt="">',
+    html: '<img src="{{ $logoSrc }}" alt="">',
     className: 'map-pin',
     iconSize: [36, 36],
     iconAnchor: [18, 18],

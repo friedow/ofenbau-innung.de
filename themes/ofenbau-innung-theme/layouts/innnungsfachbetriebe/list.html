@@ -62,21 +62,17 @@
 
     <script src="/js/leaflet.js"></script>
     <script>
-      const members = [
-        {{ $coords := hugo.Data.member_coords -}}
-        {{ range $i, $m := hugo.Data.members -}}
-        {{ $c := index $coords $i -}}
-        {
-          name: {{ $m.name | jsonify }},
-          address: {{ $m.address | jsonify }},
-          phone: {{ $m.phone | jsonify }},
-          email: {{ $m.email | jsonify }},
-          website: {{ $m.website | jsonify }},
-          lat: {{ if $c }}{{ $c.lat }}{{ else }}null{{ end }},
-          lon: {{ if $c }}{{ $c.lon }}{{ else }}null{{ end }},
-        },
-        {{ end -}}
-      ];
+      {{- $coordsList := hugo.Data.member_coords -}}
+      {{- $allMembers := slice -}}
+      {{- range $i, $m := hugo.Data.members -}}
+        {{- $c := index $coordsList $i -}}
+        {{- $entry := dict "name" $m.name "address" $m.address "phone" $m.phone "email" $m.email "website" $m.website -}}
+        {{- if $c -}}
+          {{- $entry = merge $entry (dict "lat" $c.lat "lon" $c.lon) -}}
+        {{- end -}}
+        {{- $allMembers = $allMembers | append $entry -}}
+      {{- end -}}
+      const members = {{ $allMembers | jsonify | safeJS }};
 
       const map = L.map('members-map').setView([52.1, 13.8], 8);
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {

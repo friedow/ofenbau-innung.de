@@ -25,25 +25,19 @@
         <section class="innungsaufgaben">
           <h2>Unsere Aufgaben</h2>
           <ul>
-            <li>
-              Technische, betriebswirtschaftliche, tarif- und arbeitsrechtliche
-              Informationen
-            </li>
-            <li>Organisation von Fort- und Weiterbildungen</li>
-            <li>Öffentlichkeitsarbeit und Pressearbeit</li>
-            <li>Tarifverhandlungen</li>
-            <li>Kontakte zu Behörden und öffentlichen Einrichtungen</li>
-            <li>Informationen zur Lehrlingsausbildung</li>
+            {{ range .Params.aufgaben }}
+            <li>{{ . }}</li>
+            {{ end }}
           </ul>
         </section>
 
         <section class="leadership">
           <h2>Vorstand</h2>
           <dl>
-            <dt>Landesinnungsobermeister</dt>
-            <dd>Jörg Friedow</dd>
-            <dt>Stellvertreter</dt>
-            <dd>Torsten Schulz</dd>
+            {{ range .Params.vorstand }}
+            <dt>{{ .rolle }}</dt>
+            <dd>{{ .name }}</dd>
+            {{ end }}
           </dl>
         </section>
       </div>

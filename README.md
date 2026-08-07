@@ -1,5 +1,22 @@
 # ofenbau-innung.info
 
+## Development
+
+Enter the dev shell to get Hugo on your path and run the development server:
+
+```sh
+nix develop
+hugo server
+```
+
+## Build
+
+Build the static site using nix:
+
+```sh
+nix build
+```
+
 ## Geocode members
 
 `data/member_coords.json` maps each entry in `data/members.yaml` to GPS coordinates

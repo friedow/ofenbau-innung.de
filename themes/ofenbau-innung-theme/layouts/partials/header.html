@@ -1,9 +1,10 @@
 <header class="site-header">
-  {{ if .Site.Params.logo }}
+  {{ with resources.Get .Site.Params.logo }}
+  {{ $logo := .Resize "96x96 webp q80" }}
   <a href="/" class="site-logo">
-    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+    <img src="{{ $logo.RelPermalink }}" width="48" height="48" alt="{{ $.Site.Title }}">
   </a>
-{{ else }}
+  {{ else }}
   <a href="/" class="site-logo site-logo--text">{{ .Site.Title }}</a>
   {{ end }}
 

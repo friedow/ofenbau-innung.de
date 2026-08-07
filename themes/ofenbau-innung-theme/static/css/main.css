@@ -175,8 +175,8 @@ h3 {
 }
 
 .site-logo img {
+  width: 3rem;
   height: 3rem;
-  width: auto;
   display: block;
 }
 

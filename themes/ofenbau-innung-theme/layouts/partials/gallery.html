@@ -1,10 +1,15 @@
 {{ with .Params.imageCount }}
 <div class="gallery" data-gallery>
   {{ range seq 1 . }}
-  <img src="/images/{{ $.Params.imageDir }}/{{ . }}.jpg"
-       alt="{{ $.Title }} – Bild {{ . }}"
+  {{ $i := . }}
+  {{ $path := printf "images/%s/%d.jpg" $.Params.imageDir $i }}
+  {{ with resources.Get $path }}
+  {{ $img := .Resize "1200x q80 webp" }}
+  <img src="{{ $img.RelPermalink }}"
+       alt="{{ $.Title }} – Bild {{ $i }}"
        loading="lazy"
-       data-gallery-index="{{ . }}" />
+       data-gallery-index="{{ $i }}" />
+  {{ end }}
   {{ end }}
 </div>
 

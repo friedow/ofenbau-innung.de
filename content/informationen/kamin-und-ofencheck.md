@@ -1,5 +1,9 @@
 ---
-title: Kamin- und Ofencheck
+title: Kamin und Ofencheck
+description: Lassen Sie Ihren Kamin oder Ofen professionell prüfen.
+menu:
+  beliebte_seiten:
+    weight: 3
 ---
 
 Ist Ihr Kamin oder Kachelofen fit für die Zukunft?

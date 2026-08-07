@@ -1,5 +1,9 @@
 ---
 title: Das Innungssiegel
+description: Seit Jahren stehen wir für Qualität. Das Innungssiegel ist Ihr Zeichen für geprüfte Handwerkskunst.
+menu:
+  beliebte_seiten:
+    weight: 5
 ---
 
 ### Achten Sie auf das Innungssiegel!

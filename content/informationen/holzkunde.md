@@ -1,5 +1,9 @@
 ---
 title: Holzkunde
+description: Das sollten Sie wissen, wenn Sie mit Holz heizen.
+menu:
+  beliebte_seiten:
+    weight: 4
 ---
 
 Ein Ofen spendet Wärme und Wohlbehagen, doch dieses Wohlbehagen kann schnell zum Unbehagen werden, wenn schadstoffbelastete Rauchgase durch den Kamin entlassen werden. Ob eine Feuerstätte umweltfreundlich oder umweltbelastend wirkt, hängt im wesentlichen von ihrer Bedienung und der Art des Brennstoffes ab.

@@ -8,10 +8,6 @@ params:
 
 menus:
   main:
-    - identifier: start
-      name: Startseite
-      url: /
-      weight: 10
     - identifier: betriebe
       name: Innnungsfachbetriebe
       url: /innnungsfachbetriebe/

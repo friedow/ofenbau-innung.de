@@ -1,5 +1,9 @@
 ---
-title: Wartung & Pflege
+title: Wartung und Pflege
+description: Damit Ihr Kamin, Ofen oder Herd immer richtig Zug hat, sollten Sie Folgendes beachten.
+menu:
+  beliebte_seiten:
+    weight: 2
 ---
 
 ### Saubere Kachelofen-Züge ziehen besser.

@@ -32,7 +32,10 @@
           }:
           {
             devShells.default = pkgs.mkShell {
-              packages = [ pkgs.hugo ];
+              packages = [
+                pkgs.hugo
+                pkgs.python3Packages.fonttools
+              ];
             };
 
             treefmt = {
@@ -78,6 +81,19 @@
                 options = [ ];
                 includes = [ "themes/*/layouts/**/*.html" ];
               };
+            };
+
+            packages.subset-fonts = pkgs.writeShellApplication {
+              name = "subset-fonts";
+              runtimeInputs = [
+                pkgs.coreutils
+                pkgs.findutils
+                (pkgs.python3.withPackages (ps: [
+                  ps.fonttools
+                  ps.brotli
+                ]))
+              ];
+              text = builtins.readFile ./scripts/subset-fonts.sh;
             };
 
             packages.geocode-members = pkgs.writeShellApplication {

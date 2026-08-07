@@ -33,6 +33,19 @@ Build the static site using nix:
 nix build
 ```
 
+## Subset fonts
+
+Font files in `themes/ofenbau-innung-theme/static/fonts/` are subsetted to the
+Latin Unicode ranges needed for German text. Run this after replacing or updating
+any font file:
+
+```sh
+nix run .#subset-fonts
+```
+
+Run this from the repository root. The script rewrites each `.woff2` file in place,
+stripping glyphs outside of the Latin character ranges.
+
 ## Geocode members
 
 `data/member_coords.json` maps each entry in `data/members.yaml` to GPS coordinates

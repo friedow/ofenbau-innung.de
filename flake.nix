@@ -42,6 +42,15 @@
               };
             };
 
+            packages.geocode-members = pkgs.writeShellApplication {
+              name = "geocode-members";
+              runtimeInputs = with pkgs; [
+                curl
+                jq
+              ];
+              text = builtins.readFile ./scripts/geocode-members.sh;
+            };
+
             packages.default = pkgs.stdenv.mkDerivation {
               name = "ofenbau-innung-website";
               src = ./.;

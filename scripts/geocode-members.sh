@@ -6,9 +6,8 @@
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-YAML="$SCRIPT_DIR/../data/members.yaml"
-OUT="$SCRIPT_DIR/../data/member_coords.json"
+YAML="data/members.yaml"
+OUT="data/member_coords.json"
 
 mapfile -t addresses < <(
   grep -E "^  address:" "$YAML" | awk '{
@@ -26,8 +25,6 @@ echo "["  > "$OUT"
 
 for i in "${!addresses[@]}"; do
   addr="${addresses[$i]}"
-  query="$addr, Deutschland"
-  encoded=$(printf '%s' "$query" | jq -Rr @uri)
   printf "  (%d/%d) %s\n" "$((i+1))" "$total" "$addr"
 
   nominatim_query() {

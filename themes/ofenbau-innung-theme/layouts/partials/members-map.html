@@ -6,8 +6,9 @@
      aria-label="Karte der Innungsfachbetriebe"></div>
 
 {{ $leafletJs := resources.Get "js/leaflet.js" | minify | fingerprint }}
-<script src="{{ $leafletJs.Permalink }}" integrity="{{ $leafletJs.Data.Integrity }}"></script>
+<script src="{{ $leafletJs.Permalink }}" integrity="{{ $leafletJs.Data.Integrity }}" defer></script>
 <script>
+  document.addEventListener('DOMContentLoaded', function () {
   {{- $coordsList := hugo.Data.member_coords -}}
   {{- $allMembers := slice -}}
   {{- range $i, $m := hugo.Data.members -}}
@@ -47,4 +48,5 @@
     ].filter(Boolean).join('<br>');
     L.marker([m.lat, m.lon], { icon: pinIcon }).addTo(map).bindPopup(parts);
   }
+  });
 </script>

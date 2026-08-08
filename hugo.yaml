@@ -12,8 +12,8 @@ params:
 menus:
   main:
     - identifier: betriebe
-      name: Innnungsfachbetriebe
-      url: /innnungsfachbetriebe/
+      name: Innungsfachbetriebe
+      url: /innungsfachbetriebe/
       weight: 20
     - identifier: heizkamine
       name: Heizkamine

@@ -97,4 +97,17 @@ if (galleryEl && modal) {
     if (e.key === "ArrowLeft") show(current - 1);
     if (e.key === "ArrowRight") show(current + 1);
   });
+
+  let touchStartX = 0;
+  modal.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].clientX;
+  }, { passive: true });
+  modal.addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) < 50) return;
+    show(dx < 0 ? current + 1 : current - 1);
+  }, { passive: true });
+  modal.addEventListener("touchcancel", () => {
+    touchStartX = 0;
+  }, { passive: true });
 }

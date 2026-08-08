@@ -12,7 +12,7 @@
   font-family: "Archivo";
   src: url("../fonts/Archivo.woff2") format("woff2");
   font-weight: 100 900;
-  font-stretch: 75% 125%;
+  font-stretch: 75%;
   font-style: normal;
   font-display: swap;
 }
@@ -431,7 +431,6 @@ main {
 
 /* section overview — child page links */
 .section-intro {
-  max-width: 65ch;
   margin-bottom: 2rem;
 }
 

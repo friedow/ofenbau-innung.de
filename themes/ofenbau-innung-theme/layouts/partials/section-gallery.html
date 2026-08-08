@@ -21,8 +21,7 @@ children do. Images are processed via Hugo's pipeline and served as WebP. */}}
   {{ $img := .Resize "1200x q80 webp" }}
   <img src="{{ $img.RelPermalink }}"
        alt="{{ $meta.alt }}"
-       loading="lazy"
-       data-gallery-index="{{ add $i 1 }}" />
+       loading="lazy" />
   {{ end }}
   {{ end }}
 </div>

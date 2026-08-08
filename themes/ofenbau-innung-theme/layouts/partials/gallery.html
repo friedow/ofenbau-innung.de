@@ -7,8 +7,7 @@
   {{ $img := .Resize "1200x q80 webp" }}
   <img src="{{ $img.RelPermalink }}"
        alt="{{ $.Title }} – Bild {{ $i }}"
-       loading="lazy"
-       data-gallery-index="{{ $i }}" />
+       loading="lazy" />
   {{ end }}
   {{ end }}
 </div>

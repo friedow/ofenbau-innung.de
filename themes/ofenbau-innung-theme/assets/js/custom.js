@@ -1,14 +1,49 @@
 // Menu
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.getElementById("site-nav");
+const navClose = document.querySelector(".nav-close");
 
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const open = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!open));
-    nav.classList.toggle("is-open", !open);
+function openNav() {
+  toggle.setAttribute("aria-expanded", "true");
+  nav.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeNav() {
+  toggle.setAttribute("aria-expanded", "false");
+  nav.classList.remove("is-open");
+  document.body.style.overflow = "";
+  nav.querySelectorAll(".has-dropdown.is-open").forEach((li) => {
+    li.classList.remove("is-open");
+    li.querySelector(".dropdown-toggle")?.setAttribute("aria-expanded", "false");
   });
 }
+
+if (toggle && nav) {
+  toggle.addEventListener("click", openNav);
+}
+
+if (navClose) {
+  navClose.addEventListener("click", closeNav);
+}
+
+nav?.querySelectorAll(".dropdown-toggle").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const li = btn.closest(".has-dropdown");
+    const open = li.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", String(open));
+  });
+});
+
+nav?.querySelectorAll("a").forEach((a) => {
+  a.addEventListener("click", () => {
+    if (nav.classList.contains("is-open")) closeNav();
+  });
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && nav?.classList.contains("is-open")) closeNav();
+});
 
 // Gallery modal
 const galleryEl = document.querySelector("[data-gallery]");

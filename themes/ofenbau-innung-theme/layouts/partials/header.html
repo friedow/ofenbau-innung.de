@@ -17,12 +17,35 @@
 
   {{ with .Site.Menus.main }}
   <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+    <div class="nav-overlay-header">
+      {{ with resources.Get $.Site.Params.logo }}
+      {{ $logo := .Resize "96x96 webp q80" }}
+      <a href="/" class="site-logo">
+        <img src="{{ $logo.RelPermalink }}" width="48" height="48" alt="{{ $.Site.Title }}">
+      </a>
+      {{ else }}
+      <a href="/" class="site-logo site-logo--text">{{ $.Site.Title }}</a>
+      {{ end }}
+      <button class="nav-close" aria-label="Menü schließen">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="3" x2="17" y2="17"/>
+          <line x1="17" y1="3" x2="3" y2="17"/>
+        </svg>
+      </button>
+    </div>
     <ul>
       {{ range sort . }}
       <li {{ if .HasChildren }} class="has-dropdown"{{ end }}>
         <a href="{{ .URL }}">{{ .Name }}</a>
         {{ if .HasChildren }}
+        <button class="dropdown-toggle" aria-expanded="false">
+          <span>{{ .Name }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 6 8 10 12 6"/>
+          </svg>
+        </button>
         <ul class="dropdown">
+          <li><a href="{{ .URL }}">Alle {{ .Name }}</a></li>
           {{ range .Children }}
           <li>
             <a href="{{ .URL }}">{{ .Name }}</a>

@@ -3,6 +3,8 @@ locale: de-DE
 title: Innung des Kachelofen- und Kaminbauerhandwerks Land Brandenburg
 theme: ofenbau-innung-theme
 
+enableRobotsTXT: true
+
 params:
   logo: images/logo.png
   description: Innung des Kachelofen- und Kaminbauerhandwerks Land Brandenburg – Ihr Fachverband für Kaminbau, Kachelöfen und Heizkamine.

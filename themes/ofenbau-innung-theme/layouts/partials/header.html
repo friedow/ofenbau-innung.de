@@ -45,7 +45,7 @@
           </svg>
         </button>
         <ul class="dropdown">
-          <li><a href="{{ .URL }}">Alle {{ .Name }}</a></li>
+          <li class="mobile-only"><a href="{{ .URL }}">Alle {{ .Name }}</a></li>
           {{ range .Children }}
           <li>
             <a href="{{ .URL }}">{{ .Name }}</a>

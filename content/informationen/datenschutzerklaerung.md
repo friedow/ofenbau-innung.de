@@ -76,7 +76,7 @@ Tel.: +49 170 5391235
 
 E-Mail: info@ofenbau-fiebow.de
 
-Website: ofenbau-innung.info
+Website: ofenbau-innung.de
 
 #### 3. Name und Anschrift des Datenschutzbeauftragten
 
@@ -94,7 +94,7 @@ Tel.: ‭+49 (0) 35771 5620‬
 
 E-Mail: steffen.marko@t-online.de
 
-Website: ofenbau-innung.info
+Website: ofenbau-innung.de
 
 Jede betroffene Person kann sich jederzeit bei allen Fragen und Anregungen zum Datenschutz direkt an unseren Datenschutzbeauftragten wenden.
 

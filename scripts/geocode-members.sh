@@ -32,7 +32,7 @@ for i in "${!addresses[@]}"; do
     local enc
     enc=$(printf '%s' "$q" | jq -Rr @uri)
     curl -sf --max-time 10 \
-      -H "User-Agent: ofenbau-innung.info/build-script" \
+      -H "User-Agent: ofenbau-innung.de/build-script" \
       "https://nominatim.openstreetmap.org/search?q=${enc}&format=json&limit=1" || echo "[]"
   }
 

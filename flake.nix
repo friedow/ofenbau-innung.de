@@ -1,5 +1,5 @@
 {
-  description = "ofenbau-innung.info website";
+  description = "ofenbau-innung.de website";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";

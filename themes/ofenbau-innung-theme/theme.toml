@@ -1,9 +1,9 @@
 name = "ofenbau-innung-theme"
 license = "MIT"
-licenselink = "https://github.com/friedow/ofenbau-innung.info/blob/main/LICENSE"
-description = "Theme of the ofenbau-innung.info website"
-homepage = "https://github.com/friedow/ofenbau-innung.info"
-demosite = "ofenbau-innung.info"
+licenselink = "https://github.com/friedow/ofenbau-innung.de/blob/main/LICENSE"
+description = "Theme of the ofenbau-innung.de website"
+homepage = "https://github.com/friedow/ofenbau-innung.de"
+demosite = "ofenbau-innung.de"
 tags = []
 features = []
 min_version = "v0.1.0"
